@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/04a20985c0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="../main/index.html" target="_blank"><img src="Labi wine logo.png" alt="Labi wine"></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="../main/index.html" target="_blank">Home</a></li>
+                <li class="dropdown">
+                    <a href="../vreshtat/vreshtat.html" target="_blank">Wineyards</a>
+                    <div class="dropdown-content">
+                        <a href="../galeria/galeria.html" target="_blank">Gallery</a>
+                        <a href="../galeria/certificates.html" target="_blank">Certificates</a>
+                    </div>
+                </li>
+                <li><a href="../history/history.html" target="_blank">History</a></li>
+                <li><a href="../shop/shop.html" target="_blank">Shop</a></li>
+                <li><a href="../contact/contact.html" target="_blank">Contact</a></li>
+            </ul>
+            <div class="navbar-icons" id="navbar-icons">
+                <a href="../search/search.html" target="_blank"><i class="fas fa-search"></i></a>
+                <a href="../login/login.html" target="_blank"><i class="fas fa-user"></i></a>
+                <a href="../shop/shop.html" target="_blank"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <main class="login-container">
+        <div class="login-header">
+            <h1>WELCOME BACK</h1>
+            <p>Sign in to access your account</p>
+        </div>
+
+        <form class="login-form">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="your@email.com" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+                <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="form-options">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="login-btn">SIGN IN</button>
+
+            <div class="register-link">
+                Don't have an account? <a href="#">Register</a>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <h3 id="Privacy">Privacy Policy</h3>
+        <a href="../main/index.html"><p id="Returns">Return</p></a>
+        <p id="V2025">2025 <span id="span1">designed by Leart Shulina</span></p>
+        <p id="Quote">A poem in every bottle</p>
+        <p id="Spam">Labi wine</p>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <a class="gotop" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="login.js"></script>
+</body>
+</html>
